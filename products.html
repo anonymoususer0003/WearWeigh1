@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WearWeigh | Explore Our Bands</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #000, #111, #1a1a1a);
+      color: #f5f5f5;
+      font-family: 'Poppins', sans-serif;
+    }
+    .glow {
+      box-shadow: 0 0 25px rgba(255, 204, 0, 0.4);
+    }
+    .product-card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 0 35px rgba(255, 204, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-black bg-opacity-50 backdrop-blur-md z-50 border-b border-yellow-500/20">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-3xl font-bold text-gray-100 tracking-wider">Wear<span class="text-yellow-400">Weigh</span></h1>
+      <ul class="hidden md:flex space-x-8 text-gray-300 font-medium">
+        <li><a href="index.html" class="hover:text-yellow-400 transition">Home</a></li>
+        <li><a href="about.html" class="hover:text-yellow-400 transition">About</a></li>
+        <li><a href="products.html" class="hover:text-yellow-400 transition">Products</a></li>
+        <li><a href="contact.html" class="hover:text-yellow-400 transition">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="pt-40 text-center pb-10">
+    <h1 class="text-5xl md:text-7xl font-extrabold mb-6">Discover Your Strength</h1>
+    <p class="text-gray-400 text-lg max-w-2xl mx-auto">Engineered to look invisible, built to feel unstoppable — pick your WearWeigh band.</p>
+  </section>
+
+  <!-- Products -->
+  <section class="max-w-7xl mx-auto px-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-12 pb-32">
+    
+    <!-- 250g -->
+    <div class="bg-gradient-to-br from-gray-900 to-black rounded-2xl p-6 text-center transition transform hover:scale-105 product-card">
+      <img src="./assets/producta2.gif" alt="500g Band" class="mx-auto mb-6 w-48 glow rounded-xl">
+      <h3 class="text-xl font-bold mb-2 text-yellow-400">WearWeigh Lite (500g)</h3>
+      <p class="text-gray-400 mb-4">Featherweight and flexible. Perfect for beginners and subtle all-day wear.</p>
+      <p class="text-yellow-300 font-bold text-lg mb-6">₹1,299</p>
+      <button class="bg-yellow-400 text-black px-8 py-2 rounded-full font-semibold hover:bg-yellow-300 transition-all">Buy Now</button>
+    </div>
+
+    <!-- 1kg -->
+    <div class="bg-gradient-to-br from-gray-900 to-black rounded-2xl p-6 text-center transition transform hover:scale-105 product-card">
+      <img src="./assets/product1.gif" alt="1kg Band" class="mx-auto mb-6 w-48 glow rounded-xl">
+      <h3 class="text-xl font-bold mb-2 text-yellow-400">WearWeigh Core (1kg)</h3>
+      <p class="text-gray-400 mb-4">The perfect balance for resistance training without sacrificing comfort.</p>
+      <p class="text-yellow-300 font-bold text-lg mb-6">₹2,299</p>
+      <button class="bg-yellow-400 text-black px-8 py-2 rounded-full font-semibold hover:bg-yellow-300 transition-all">Buy Now</button>
+    </div>
+
+    <!-- 2kg -->
+    <div class="bg-gradient-to-br from-gray-900 to-black rounded-2xl p-6 text-center transition transform hover:scale-105 product-card">
+      <img src="./assets/band-hand.png.gif" alt="2.5kg Band" class="mx-auto mb-6 w-48 glow rounded-xl">
+      <h3 class="text-xl font-bold mb-2 text-yellow-400">WearWeigh Pro (2.5kg)</h3>
+      <p class="text-gray-400 mb-4">Elite-level resistance with unique design. Built for pros and perfectionists.</p>
+      <p class="text-yellow-300 font-bold text-lg mb-6">₹4,999</p>
+      <button class="bg-yellow-400 text-black px-8 py-2 rounded-full font-semibold hover:bg-yellow-300 transition-all">Buy Now</button>
+    </div>
+
+  </section>
+
+  <!-- CTA -->
+  <section class="text-center py-20 bg-black border-t border-yellow-500/20">
+    <h2 class="text-3xl md:text-5xl font-extrabold mb-6">Smart Bands Coming Soon</h2>
+    <p class="text-gray-400 max-w-xl mx-auto mb-8">Heart-rate monitoring, movement tracking, and adaptive AI workouts — all in one band.</p>
+    <a href="contact.html" class="bg-yellow-400 text-black px-8 py-3 rounded-full text-lg font-bold hover:bg-yellow-300 transition">Get Notified</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 py-6 text-center text-gray-500 text-sm">
+    © 2025 WearWeigh. All rights reserved.
+  </footer>
+
+  <script>
+    ScrollReveal().reveal('.product-card', { delay: 200, distance: '50px', origin: 'bottom' });
+  </script>
+
+</body>
+</html>
